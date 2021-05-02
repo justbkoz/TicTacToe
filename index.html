@@ -7,9 +7,25 @@
     <link rel='stylesheet' href='tictactoe.css'>
     <title>Tic Tac Toe</title>
 </head>
-<h1>Tic Tac Toe</h1>
+
 
 <body>
+    <h1>Tic Tac Toe</h1>
+    <div id='players'>
+        <div id='playerA'>
+            <input type='text' id='player1' placeholder='Player1'>
+        </div>
+        <div id='playerB'>
+            <input type='text' id='player2' placeholder='Player2'>
+        </div>
+        <div id='ATurn'>X</div>
+        <div id='BTurn'>O</div>
+    </div>
+    <button type='button' id='start'>Start</button>
+    <div id='gameBoard'></div>
+    <button type='button' id='restart'>Restart Game</button>
+    <button type='button' id='resetScore'>Reset Scores</button>
+    <button type='button' id='resetAll'>Reset All</button>
 
     <script src='tictactoe.js'></script>
 </body>

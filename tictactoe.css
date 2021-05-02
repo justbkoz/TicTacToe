@@ -1,0 +1,76 @@
+body {
+    background-color: grey;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+#players {
+    font-size: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5vmin;
+}
+
+#gameboard {
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    height: 50vmin;
+    width: 50vmin;
+    margin: auto;
+   
+}
+
+.board {
+    color: white;
+    border-color: rgb(68, 196, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    border-style: solid;
+   
+}
+
+.board:nth-child(1){
+    border-width: 0px .5rem .5rem 0px;
+}
+
+.board:nth-child(2){  
+    border-width: 0px .5rem .5rem .5rem;
+}
+.board:nth-child(3){
+   border-width: 0px 0px .5rem .5rem;
+}
+
+.board:nth-child(4){
+    border-width: .5rem .5rem .5rem 0px;
+}
+
+.board:nth-child(5){   
+    border-width: .5rem .5rem .5rem .5rem;
+}
+
+.board:nth-child(6){   
+    border-width: .5rem 0px .5rem .5rem;
+}
+
+.board:nth-child(7){   
+    border-width: .5rem .5rem 0px 0px;
+}
+
+.board:nth-child(8){   
+    border-width: .5rem .5rem 0px .5rem;
+}
+
+.board:nth-child(9){   
+    border-width: .5rem 0px 0px .5rem;
+}
