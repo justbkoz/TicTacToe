@@ -11,7 +11,6 @@ const ATurn = document.getElementById('ATurn');
 const BTurn = document.getElementById('BTurn');
 const start = document.getElementById('start');
 
-
 let gBoard = new Array();
 
 start.addEventListener('click', startGame);
@@ -25,8 +24,6 @@ const playerFactory = (name) => {
     this.wins = 0;
     return { name, turn, wins }
 }
-
-
 
 (function () { // Populate gBoard Array
     for (i = 0; i < 9; i++) {
@@ -66,7 +63,6 @@ function displayTurn() {
     if (play2.turn) {
         BTurn.innerText = `O's turn`
     } else { BTurn.innerText = '' }
-
 }
 
 function turnFunction() {
@@ -111,7 +107,6 @@ function startGame() {
     displayTurn();
 }
 
-
 function winner() {
     let winCond = [
         gBoard[0].innerText + gBoard[1].innerText + gBoard[2].innerText,
@@ -144,7 +139,6 @@ function tie() {
         ATurn.innerText = 'Tie!'
         setTimeout(() => restartGame(), 1000)
     }
-
 }
 
 function resetWins() {
@@ -162,11 +156,3 @@ function resetPage() {
 
 let play1 = playerFactory('Player1');
 let play2 = playerFactory('Player2');
-
-
-
-
-
-//maybe not immediatly reset...
-
-
