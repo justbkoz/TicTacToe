@@ -5,25 +5,63 @@ body {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 4em;
 }
 
 #players {
     font-size: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 5vmin;
+    padding-bottom: 10px;
+}
+
+input {
+    background-color: #c5c0c0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0.35em;
+}
+
+input[type=text] {
+    font-size: .5em;
+}
+
+.buttons {
+    display: inline-block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #000;
+    margin: 0 0.2em 0.2em 0;
+    border-radius:0.35em;
+    box-sizing: border-box;
+    font-weight:500;
+    color:#000000;
+    background-color:#c5c0c0;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+.buttons:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#FFFFFF;
+    border-color:#FFFFFF;
+    background-color: rgb(68, 196, 68);
+    font-size: larger;
+}
+
+.turns {
+    font-size: .75em;
+    color: rgb(68, 196, 68);
 }
 
 #gameboard {
-    padding-top: 5vmin;
-    padding-bottom: 5vmin;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    height: 50vmin;
-    width: 50vmin;
+    height: 400px;
+    width: 400px;
     margin: auto;
    
 }
@@ -37,40 +75,129 @@ h1 {
     font-size: 5rem;
     font-weight: bold;
     border-style: solid;
-   
 }
 
-.board:nth-child(1){
+.board:hover{
+    cursor: pointer;
+}
+
+#board0{
     border-width: 0px .5rem .5rem 0px;
 }
 
-.board:nth-child(2){  
+#board1{  
     border-width: 0px .5rem .5rem .5rem;
 }
-.board:nth-child(3){
+#board2{
    border-width: 0px 0px .5rem .5rem;
 }
 
-.board:nth-child(4){
+#board3{
     border-width: .5rem .5rem .5rem 0px;
 }
 
-.board:nth-child(5){   
+#board4{   
     border-width: .5rem .5rem .5rem .5rem;
 }
 
-.board:nth-child(6){   
+#board5{   
     border-width: .5rem 0px .5rem .5rem;
 }
 
-.board:nth-child(7){   
+#board6{   
     border-width: .5rem .5rem 0px 0px;
 }
 
-.board:nth-child(8){   
+#board7{   
     border-width: .5rem .5rem 0px .5rem;
 }
 
-.board:nth-child(9){   
+#board8{   
     border-width: .5rem 0px 0px .5rem;
+}
+
+#superBoard {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+   
+}
+
+#super0 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super1 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super2 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super3 {
+    border-width: 0px .0px .5rem 0px;
+}
+
+#super4 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super5 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super6 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super7 {
+    border-width: 0px 0px .5rem 0px;
+}
+
+#super8 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super9 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super10 {
+    border-width: 0px .5rem .5rem 0px;
+}
+
+#super11 {
+    border-width: 0px 0px .5rem 0px;
+}
+
+#super12 {
+    border-width: 0px .5rem 0px 0px;
+}
+
+#super13 {
+    border-width: 0px .5rem 0px 0px;
+}
+
+#super14 {
+    border-width: 0px .5rem 0px 0px;
+}
+
+#super15 {
+    border-width: 0px 0px 0px 0px;
+}
+
+#superWins {
+    font-size: 2em;
+}
+
+img {
+    width: 90%;
+    height: auto;
 }

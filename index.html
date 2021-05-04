@@ -10,7 +10,7 @@
 
 
 <body>
-    <h1>Tic Tac Toe</h1>
+    <h1 id='title'><i>Super</i> Tic Tac Toe</h1>
     <div id='players'>
         <div id='playerA'>
             <input type='text' id='player1' placeholder='Player1 (Name Optional)'>
@@ -18,16 +18,20 @@
         <div id='playerB'>
             <input type='text' id='player2' placeholder='Player2 (Name Optional)'>
         </div>
-        <div id='ATurn'>X</div>
-        <div id='BTurn'>O</div>
+        <div id='aTurn' class='turns'>X</div>
+        <div id='bTurn' class='turns'>O</div>
     </div>
-    <button type='button' id='start'>Start</button>
-    <div id='gameBoard'>
+    <button type='button' class='buttons' id='swap'>Regular Game</button>
+    <button type='button' class='buttons' id='start'>Start</button>
+    <div id='gameBoard'></div>
+    <div id='superBoard'></div>
+    <button type='button' class='buttons' id='restart'>Restart Game</button>
+    <button type='button' class='buttons' id='resetScore'>Reset Scores</button>
+    <button type='button' class='buttons' id='resetAll'>Reset All</button>
+    <div id='superWins'>
+        <p>Ways to win</p>
+        <img src='winConditions.png' alt='four different ways to win' width='1826' height='450'>
     </div>
-    <button type='button' id='restart'>Restart Game</button>
-    <button type='button' id='resetScore'>Reset Scores</button>
-    <button type='button' id='resetAll'>Reset All</button>
-
     <script src='tictactoe.js'></script>
 </body>
 
