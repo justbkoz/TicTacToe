@@ -13,21 +13,28 @@
     <h1 id='title'><i>Super</i> Tic Tac Toe</h1>
     <div id='players'>
         <div id='playerA'>
-            <input type='text' id='player1' placeholder='Player1 (Name Optional)'>
+            <br>
+            <input type='text' id='player1' placeholder='Enter name here (Optional)'>
         </div>
         <div id='playerB'>
-            <input type='text' id='player2' placeholder='Player2 (Name Optional)'>
+            <input type='checkbox' id='aiCheck' name='aiCheckbox'>
+            <label for='aiCheck' id='aiCheckLabel'>Click for easy AI<br></label>
+            <input type='text' id='player2' placeholder='Enter name here (Optional)'>
         </div>
         <div id='aTurn' class='turns'>X</div>
         <div id='bTurn' class='turns'>O</div>
     </div>
-    <button type='button' class='buttons' id='swap'>Regular Game</button>
-    <button type='button' class='buttons' id='start'>Start</button>
+    <div id='topButtons' class='buttonBox'>
+        <button type='button' class='buttons' id='swap'>Regular Game</button>
+        <button type='button' class='buttons' id='start'>Start</button>
+    </div>
     <div id='gameBoard'></div>
     <div id='superBoard'></div>
-    <button type='button' class='buttons' id='restart'>Restart Game</button>
-    <button type='button' class='buttons' id='resetScore'>Reset Scores</button>
-    <button type='button' class='buttons' id='resetAll'>Reset All</button>
+    <div id='bottomButtons' class='buttonBox'>
+        <button type='button' class='buttons' id='restart'>Restart Game</button>
+        <button type='button' class='buttons' id='resetScore'>Reset Scores</button>
+        <button type='button' class='buttons' id='resetAll'>Reset All</button>
+    </div>
     <div id='superWins'>
         <p>Ways to win</p>
         <img src='winConditions.png' alt='four different ways to win' width='1826' height='450'>
